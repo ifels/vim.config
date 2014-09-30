@@ -3,6 +3,7 @@ set sw=4
 set sts=4
 set nu
 set backspace=indent,eol,start
+set incsearch
 
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -124,6 +125,7 @@ nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>tl :TlistToggle<CR>
 nmap <leader>tb :TagbarToggle<CR>
 
+"nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 """""""""""syntasitc""""""""""""""""
 let g:syntastic_ignore_files=[".*\.py$"]
 
@@ -183,6 +185,4 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
-
-
 
