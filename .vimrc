@@ -34,15 +34,15 @@ endif
 set nobomb
 let g:fencview_autodetect=0
 
+set t_Co=256 
+colorscheme molokai "设置色彩方案
+
 set laststatus=2      " 总是显示状态栏
-highlight StatusLine cterm=bold ctermfg=black ctermbg=gray
+hi StatusLine cterm=bold ctermfg=black ctermbg=gray
 function! CurDir() 
 	let curdir = substitute(getcwd(), $HOME, "~","g") 
 	return curdir  
 endfunction
-
-set t_Co=256 
-colorscheme molokai "设置色彩方案
 
 hi Pmenu gui=bold ctermbg=DarkGreen
 hi PmenuSel ctermfg=White ctermbg=DarkBlue guifg=White guibg=DarkBlue
@@ -108,27 +108,21 @@ let g:winManagerWindowLayout='NERDTree,BufExplorer'
 "设置winmanager的宽度，默认为25 
 let g:winManagerWidth = 30
 
-vmap <C-c> "yy
-vmap <C-x> "yd
-nmap <C-v> "yp
-nmap <C-a> ggvG$
-
-nmap wm :WMToggle<CR> 
+nmap <leader>wm :WMToggle<CR> 
 " 垂直分割当前窗口
-nmap wv <C-w>v  
-" 关闭当前窗口
-nmap wc <C-w>c
+nmap <leader>wv <C-w>v  
 " 水平分割当前窗口
-nmap ws <C-w>s
-nmap wj <C-W>j 
-nmap wh <C-W>h
-nmap wl <C-W>l
-nmap wk <C-W>k
-nmap w-	<C-W>-
+nmap <leader>ws <C-w>s
+" 关闭当前窗口
+nmap <leader>wc <C-w>c
+nmap <leader>wj <C-w>j 
+nmap <leader>wh <C-w>h
+nmap <leader>wl <C-w>l
+nmap <leader>wk <C-w>k
 
-nmap nt :NERDTreeToggle<CR>
-nmap tl :TlistToggle<CR>
-nmap tb :TagbarToggle<CR>
+nmap <leader>nt :NERDTreeToggle<CR>
+nmap <leader>tl :TlistToggle<CR>
+nmap <leader>tb :TagbarToggle<CR>
 
 """""""""""syntasitc""""""""""""""""
 let g:syntastic_ignore_files=[".*\.py$"]
