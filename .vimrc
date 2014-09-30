@@ -124,8 +124,7 @@ nmap <leader>wk <C-w>k
 nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>tl :TlistToggle<CR>
 nmap <leader>tb :TagbarToggle<CR>
-
-"nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nmap <silent> <F3> :set hlsearch!<CR>:echo ":set hlsearch=". &hlsearch<CR>
 """""""""""syntasitc""""""""""""""""
 let g:syntastic_ignore_files=[".*\.py$"]
 
