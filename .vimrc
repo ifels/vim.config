@@ -10,6 +10,7 @@ filetype off                   " required!
 
 set tags=~/.vim/stdtags,tags,.tags,../tags
 set tags+=/usr/local/go/tags
+set path=./**
 "set tags+=/home/ifels/work/go/tags
 set completeopt=longest,menu
 
@@ -35,7 +36,7 @@ endif
 set nobomb
 let g:fencview_autodetect=0
 
-set t_Co=256 
+set t_Co=256
 colorscheme molokai "设置色彩方案
 
 set laststatus=2      " 总是显示状态栏
@@ -44,9 +45,6 @@ function! CurDir()
 	let curdir = substitute(getcwd(), $HOME, "~","g") 
 	return curdir  
 endfunction
-
-hi Pmenu gui=bold ctermbg=DarkGreen
-hi PmenuSel ctermfg=White ctermbg=DarkBlue guifg=White guibg=DarkBlue
 
 """""""""""""""""""""""""""""""
 "" powerline setting
