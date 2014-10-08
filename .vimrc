@@ -8,9 +8,9 @@ set ts=4
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+set path+=./**
 set tags=~/.vim/stdtags,tags,.tags,../tags
 set tags+=/usr/local/go/tags
-set path=./**
 "set tags+=/home/ifels/work/go/tags
 set completeopt=longest,menu
 
