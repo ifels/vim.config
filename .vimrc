@@ -1,10 +1,9 @@
-set ts=4
-set sw=4
-set sts=4
 set nu
-set expandtab
 set backspace=indent,eol,start
 set incsearch
+
+set sw=4
+set ts=4
 
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -150,6 +149,9 @@ let g:ycm_confirm_extra_conf = 0
 
 " markdown language setting
 let g:vim_markdown_folding_disabled=1
+
+""----- python ------"""
+autocmd FileType python setlocal et sta sw=4 sts=4
 
 """---- golang -------""""
 au BufRead,BufNewFile *.go set filetype=go
