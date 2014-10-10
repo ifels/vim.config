@@ -22,13 +22,28 @@ filetype plugin indent on     " required!
 filetype plugin on
 syntax on
 
-
-
 " encodings detect
 set encoding=utf-8
 set fenc=utf-8
-set fileencodings=ucs-bom,utf-8,gb2312,cp936,gbk,big5
+set fileencodings=ucs-bom,utf-8,gb2312,cp936,gbk,big5,chinese,latin-1
+if has("win32")
+	set fileencoding=utf-8
+	set langmenu=en_US
+	let $LANG = 'en_US'
+	source $VIMRUNTIME/delmenu.vim
+	source $VIMRUNTIME/menu.vim
+	language messages en_US.utf-8
+endif
 
+if has("gui_running") 
+	au GUIEnter * simalt ~x " 窗口启动时自动最大化 
+	set guioptions-=m " 隐藏菜单栏 
+	set guioptions-=T " 隐藏工具栏 
+	"set guioptions-=L " 隐藏左侧滚动条 
+	"set guioptions-=r " 隐藏右侧滚动条 
+	"set guioptions-=b " 隐藏底部滚动条 
+	"set showtabline=0 " 隐藏Tab栏 
+endif 
 
 if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
 	set ambiwidth=double
