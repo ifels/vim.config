@@ -51,6 +51,13 @@ endif
 set nobomb
 let g:fencview_autodetect=0
 
+
+if has("win32")
+	set guifont=Source_Code_Pro:h12:cANSI
+endif
+	
+let g:molokai_original = 1
+let g:rehash256 = 1
 set t_Co=256
 colorscheme molokai "设置色彩方案
 
