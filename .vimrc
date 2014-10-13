@@ -1,6 +1,8 @@
 set nu
+set hidden
 set backspace=indent,eol,start
 set incsearch
+set history=200
 
 set sw=4
 set ts=4
@@ -145,6 +147,9 @@ nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>tl :TlistToggle<CR>
 nmap <leader>tb :TagbarToggle<CR>
 nmap <silent> <F3> :set hlsearch!<CR>:echo ":set hlsearch=". &hlsearch<CR>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
 """""""""""syntasitc""""""""""""""""
 let g:syntastic_ignore_files=[".*\.py$"]
 
