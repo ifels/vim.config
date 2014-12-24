@@ -61,10 +61,12 @@ if has("win32")
 	set guifont=Source_Code_Pro:h12:cANSI
 endif
 	
-let g:molokai_original = 1
-let g:rehash256 = 1
 set t_Co=256
-colorscheme molokai "设置色彩方案
+"let g:molokai_original = 1
+"let g:rehash256 = 1
+"colorscheme molokai "设置色彩方案
+set background=dark
+colorscheme solarized
 
 set laststatus=2      " 总是显示状态栏
 hi StatusLine cterm=bold ctermfg=black ctermbg=gray
