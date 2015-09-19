@@ -141,17 +141,17 @@ let g:winManagerWindowLayout='NERDTree,BufExplorer'
 "设置winmanager的宽度，默认为25 
 let g:winManagerWidth = 30
 
-nmap <leader>wm :WMToggle<CR> 
+nmap wm :WMToggle<CR> 
 " 垂直分割当前窗口
-nmap <leader>wv <C-w>v  
+nmap wv <C-w>v  
 " 水平分割当前窗口
-nmap <leader>ws <C-w>s
+nmap ws <C-w>s
 " 关闭当前窗口
-nmap <leader>wc <C-w>c
-nmap <leader>wj <C-w>j 
-nmap <leader>wh <C-w>h
-nmap <leader>wl <C-w>l
-nmap <leader>wk <C-w>k
+nmap wc <C-w>c
+nmap wj <C-w>j 
+nmap wh <C-w>h
+nmap wl <C-w>l
+nmap wk <C-w>k
 
 nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>tl :TlistToggle<CR>
