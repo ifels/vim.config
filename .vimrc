@@ -207,10 +207,10 @@ au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 "au FileType go nmap <Leader>i <Plug>(go-info)
 "au FileType go nmap <Leader>e <Plug>(go-rename)
 
-au FileType go nmap mb <Plug>(go-build)
+au FileType go nmap mf <Plug>(go-def)
 au FileType go nmap mc <Plug>(go-doc)
-au FileType go nmap md <Plug>(go-def)
 au FileType go nmap mi <Plug>(go-implements)
+au FileType go nmap mb <Plug>(go-build)
 au FileType go map mt  :TagbarToggle<CR>
 
 
