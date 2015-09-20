@@ -12,7 +12,7 @@
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/vim-godef"]
 	path = bundle/vim-godef
 	url = https://github.com/dgryski/vim-godef.git
@@ -27,7 +27,7 @@
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
-	url = https://github.com/tpope/vim-commentary
-[submodule "bundle/vim-commentary"]
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/vim-go"]
 	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go
+	url = https://github.com/fatih/vim-go.git
