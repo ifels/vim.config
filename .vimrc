@@ -211,6 +211,7 @@ au FileType go nmap mf <Plug>(go-def)
 au FileType go nmap mc <Plug>(go-doc)
 au FileType go nmap mi <Plug>(go-implements)
 au FileType go nmap mb <Plug>(go-build)
+au FileType go nmap mr <Plug>(go-run)
 au FileType go map mt  :TagbarToggle<CR>
 
 
